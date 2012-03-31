@@ -1,0 +1,12 @@
+# logs and symlinks
+rholog.txt
+rholog-*
+sim-*
+
+# build output
+bin/
+
+# RhoStudio project info
+.project
+.settings/
+

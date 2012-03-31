@@ -1,0 +1,35 @@
+<div data-role="page" data-add-back-btn="true">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :index %>
+    <h1><%= @worktime.work_date %></h1>
+    <%= link_to "Edit", :action => :edit, :id => @worktime.object %>
+  </div>
+
+  <div data-role="content">
+    <table>
+      
+      <tr>
+    	<td class="itemLabel">WorkDate</td>
+        <td class="itemValue"><%= @worktime.work_date%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">StartTime</td>
+        <td class="itemValue"><%= @worktime.start_time%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">EndTime</td>
+        <td class="itemValue"><%= @worktime.end_time%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Note</td>
+        <td class="itemValue"><%= @worktime.note%></td>
+      </tr>
+      
+    </table>
+  </div>
+
+</div>

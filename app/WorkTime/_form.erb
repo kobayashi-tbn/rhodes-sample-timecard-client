@@ -1,0 +1,24 @@
+
+<div data-role="fieldcontain">
+  <label for="worktime[work_date]" class="fieldLabel">Work date</label>
+  <input type="text" id="worktime[work_date]" name="worktime[work_date]" readonly value="<%= $choosed['worktime[work_date]'] || worktime.work_date %>" 
+    <%= placeholder("Work date") %> onClick="popupDateTimeAJPicker('1', 'Choose Date', 'worktime[work_date]');" />
+</div>
+
+<div data-role="fieldcontain">
+  <label for="worktime[start_time]" class="fieldLabel">Start time</label>
+  <input type="text" id="worktime[start_time]" name="worktime[start_time]" readonly value="<%= $choosed['worktime[start_time]'] || worktime.start_time %>"
+    <%= placeholder("Start time") %> onClick="popupDateTimeAJPicker('2', 'Choose Start Time', 'worktime[start_time]');" />
+</div>
+
+<div data-role="fieldcontain">
+  <label for="worktime[end_time]" class="fieldLabel">End time</label>
+  <input type="text" id="worktime[end_time]" name="worktime[end_time]" readonly value="<%= $choosed['worktime[end_time]'] || worktime.end_time %>"
+    <%= placeholder("End time") %> onClick="popupDateTimeAJPicker('2', 'Choose End Time', 'worktime[end_time]');" />
+</div>
+
+<div data-role="fieldcontain">
+  <label for="worktime[note]" class="fieldLabel">Note</label>
+  <input type="text" id="worktime[note]" name="worktime[note]" value="<%= @worktime.note %>" <%= placeholder("Note") %> />
+</div>
+

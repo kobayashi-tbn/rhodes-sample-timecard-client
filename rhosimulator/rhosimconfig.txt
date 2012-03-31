@@ -1,0 +1,8 @@
+rhodes_path='/Users/toshinobu/.rvm/gems/ruby-1.8.7-p352@rhodes/gems/rhodes-3.3.2'
+app_version='1.0'
+app_name='jqmobilekintai'
+reload_app_changes=0
+debug_port=
+debug_host='127.0.0.1'
+platform='iphone'
+ext_path=/Users/toshinobu/.rvm/gems/ruby-1.8.7-p352@rhodes/gems/rhodes-3.3.2/lib/extensions/json;

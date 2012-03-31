@@ -1,0 +1,40 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Edit <%= @worktime.work_date %></h1>
+    <a href="<%= url_for :action => :show, :id => @worktime.object %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+    <a href="<%= url_for :action => :delete, :id => @worktime.object %>" class="ui-btn-right" data-icon="delete" data-direction="reverse">
+      Delete
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @worktime.object %>"/>
+
+      <%= render :partial => 'form', :locals => {:worktime => @worktime} %>
+
+      <input type="submit" value="Update"/>
+    </form>
+ 
+      <% unless System::get_property('platform') == 'Blackberry' %>
+          <script type="text/javascript">
+      
+      function setFieldValue(field, value) {
+        <%# document.getElementById(field).value=value; %>
+        var element = $("div.ui-page-active [id='" + field + "']")[0];
+        element.value = value;
+      }
+      
+      function popupDateTimeAJPicker(flag, title, field_key) {
+        $.get('/app/WorkTime/popup', { flag: flag, title: title, field_key: field_key });
+        return false;
+      }
+                  
+            </script>
+      <% end %>
+      
+        </div>
+</div>
