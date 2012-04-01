@@ -1,6 +1,6 @@
 #sdk: "/Users/xxxx/.rvm/gems/ruby-1.8.7-p352@rhodes/gems/rhodes-3.3.2"
 sdkversion: 3.3.2
-name: jqmobilekintai
+name: timecard_client
 version: 1.0
 vendor: rhomobile
 build: debug
@@ -12,8 +12,8 @@ iphone:
   provisionprofile: 
   codesignidentity: 
   entitlements: 
-  BundleIdentifier: com.rhomobile.jqmobilekintai
-  BundleURLScheme: jqmobilekintai
+  BundleIdentifier: com.rhomobile.rhodes-sample-timecard-client
+  BundleURLScheme: rhodes-sample-timecard-client
   emulatortarget: iphone
 wp:
   productid: 05588e20-546d-012f-6898-58b035f51d8e
