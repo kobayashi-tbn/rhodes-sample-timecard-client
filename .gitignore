@@ -12,3 +12,7 @@ bin/
 
 # build.yml
 build.yml
+
+# RhoSimulator
+rhosimulator/rhosimconfig.txt
+
