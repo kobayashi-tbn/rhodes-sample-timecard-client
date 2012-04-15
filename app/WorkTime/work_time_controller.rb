@@ -13,7 +13,8 @@ class WorkTimeController < Rho::RhoController
   # GET /WorkTime
   def index
     $choosed.clear
-    @worktimes = WorkTime.find(:all)
+#    @worktimes = WorkTime.find(:all)
+    @worktimes = WorkTime.find(:all, :order => "work_date", :orderdir => 'DESC')
     render :back => '/app'
   end
 
