@@ -16,3 +16,5 @@ build.yml
 # RhoSimulator
 rhosimulator/rhosimconfig.txt
 
+# Databeses
+rhosimulator/db/
