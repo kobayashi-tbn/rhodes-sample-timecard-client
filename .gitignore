@@ -1,5 +1,5 @@
 # logs and symlinks
-rholog.txt
+rholog.txt*
 rholog-*
 sim-*
 
