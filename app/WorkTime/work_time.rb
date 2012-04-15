@@ -4,7 +4,7 @@ class WorkTime
   include Rhom::PropertyBag
 
   # Uncomment the following line to enable sync with WorkTime.
-  # enable :sync
+  enable :sync
 
   #add model specifc code here
 end
